@@ -60,5 +60,8 @@ mkdir Documents
 cd Documents
 mkdir Shared
 cd
+cd wm/scripts
+rm install.sh
+cd
 
 echo "DONE "
