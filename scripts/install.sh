@@ -26,8 +26,15 @@ paru -S --noconfirm vscodium-bin
 clear
 paru -S --noconfirm tor-browser-bin
 clear
-
 cd
+git clone https://aur.archlinux.org/tor-browser-bin.git
+cd tor-browser-bin
+gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
+makepkg -si
+cd
+rm -rf tor-browser-bin
+clear
+
 git clone https://github.com/mashrukk/dwm
 mv dwm/ wm
 
