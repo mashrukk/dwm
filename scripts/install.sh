@@ -22,7 +22,7 @@ paru -S --noconfirm librewolf-bin
 clear
 paru -S --noconfirm qview
 clear
-paru -S --noconfirm vscodium-bin
+paru -S --noconfirm visual-studio-code-bin
 clear
 paru -S --noconfirm tor-browser-bin
 clear
