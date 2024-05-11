@@ -3,8 +3,8 @@ static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FreeSans Bold:size=12" };
-static const char dmenufont[]       = "FreeSans Bold:size=12";
+static const char *fonts[]          = { "FreeSans Bold:size=11.5" };
+static const char dmenufont[]       = "FreeSans Bold:size=11.5";
 static const char col_gray1[]       = "#141414";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#ebe8e8";
