@@ -22,5 +22,35 @@ zypper install obsidian
 sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
 printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=gitlab.com_paulcarroty_vscodium_repo\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/zypp/repos.d/vscodium.repo
 sudo zypper in codium
+cd
+echo "Installing dwm, dmenu, and slstatus..."
+cd wm/dwm || exit
+sudo make clean install
+cd ../dmenu || exit
+sudo make clean install
+cd ../slstatus || exit
+sudo make clean install
+cd
+mv wm/xinitrc ~/.xinitrc
 
-fastfetch
+echo "Setting up picom"
+cd
+cd /etc/xdg/ || exit
+sudo rm picom.conf
+cd
+sudo mv wm/picom.conf /etc/xdg/
+cd
+mv wm/alacritty ~/.config/
+cd
+mkdir Pictures
+cd Pictures
+mkdir wallpapers
+cd
+mv wm/wall.jpg Pictures/wallpapers
+mkdir Videos
+mkdir Documents
+cd Documents
+mkdir Shared
+cd
+
+echo "DONE "
