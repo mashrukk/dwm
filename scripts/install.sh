@@ -8,7 +8,7 @@ cd ..
 rm -rf paru-bin
 
 echo "Installing packages"
-paru -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot libxft noto-fonts noto-fonts-emoji alacritty mpv libxinerama xorg-fonts-misc picom lxappearance brightnessctl pavucontrol playerctl pamixer flameshot otf-font-awesome polkit-gnome feh xtrlock gnome-themes-extra papirus-icon-theme blueman
+paru -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot libxft noto-fonts noto-fonts-emoji alacritty mpv libxinerama picom lxappearance brightnessctl pavucontrol playerctl pamixer flameshot otf-font-awesome polkit-gnome feh xtrlock gnome-themes-extra papirus-icon-theme blueman
 sudo systemctl enable bluetooth
 
 # Thunar
