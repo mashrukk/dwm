@@ -83,12 +83,13 @@ static const Key keys[] = {
 /* Audio & Monitor */
 	{ ControlMask,                  XK_Up,     spawn,          SHCMD ("pactl -- set-sink-volume 0 +5%")},
 	{ ControlMask,                  XK_Down,   spawn,          SHCMD ("pactl -- set-sink-volume 0 -5%")},
-	{ ControlMask,                  XK_End,   spawn,          SHCMD ("playerctl play-pause")},
-	{ MODKEY,                      XK_9,      spawn,          SHCMD ("playerctl previous")},
+	{ ControlMask,                  XK_End,    spawn,          SHCMD ("playerctl play-pause")},
+	{ MODKEY,                       XK_9,      spawn,          SHCMD ("playerctl previous")},
 	{ MODKEY,                       XK_0,      spawn,          SHCMD ("playerctl next")},
 	{ ShiftMask,                    XK_Up,     spawn,          SHCMD ("brightnessctl set +10%")},
 	{ ShiftMask,                    XK_Down,   spawn,          SHCMD ("brightnessctl set 10%-")},	
 /* Window Management */	
+        { MODKEY,                       XK_Tab,    view,           {0} },
         { MODKEY,                       XK_d,      togglebar,      {0} },
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
