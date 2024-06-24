@@ -76,7 +76,6 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_w,      spawn,          SHCMD ("exec $HOME/wm/scripts/wallpaper.sh")},
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD ("feh --bg-scale --randomize $HOME/Pictures/wallpapers/*") },
         { MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD ("GTK_THEME=Adwaita:dark pavucontrol")},
-	{ MODKEY,                       XK_Delete, spawn,          SHCMD ("echo -n " " | xclip -selection clipboard")},
 	{ 0,			        XK_Print,  spawn,	   {.v = prtscrcmd } },
         { MODKEY,                       XK_l,      spawn,          SHCMD ("xtrlock")},
 
@@ -93,7 +92,7 @@ static const Key keys[] = {
         { MODKEY,                       XK_d,      togglebar,      {0} },
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-        { MODKEY,                       XK_r,      spawn,          SHCMD ("reboot")},
+        { MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD ("reboot")},
         { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD ("shutdown now")},
 	//{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
