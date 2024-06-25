@@ -58,5 +58,4 @@ cd
 cd wm/scripts
 rm install.sh
 cd
-
-echo "DONE "
+startx
