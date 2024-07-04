@@ -17,7 +17,7 @@ clear
 cd 
 
 # Apps
-paru -S --noconfirm obsidian signal-desktop syncthing keepassxc ttf-indic-otf vulkan-headers
+paru -S --noconfirm obsidian signal-desktop syncthing keepassxc ttf-indic-otf
 paru -S --noconfirm librewolf-bin
 clear
 paru -S --noconfirm qview-git
