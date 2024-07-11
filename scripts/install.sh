@@ -18,7 +18,7 @@ cd
 
 # Apps
 paru -S --noconfirm obsidian signal-desktop syncthing keepassxc vulkan-headers
-paru -S --noconfirm librewolf-bin
+paru -S --noconfirm brave-bin
 clear
 paru -S --noconfirm qview-git
 clear
