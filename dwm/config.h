@@ -69,7 +69,7 @@ static const Key keys[] = {
 /* Applications */	
 	{ MODKEY,                       XK_k,      spawn,          SHCMD ("keepassxc")},
 	{ MODKEY,                       XK_o,      spawn,          SHCMD ("obsidian")},
-	{ MODKEY,                       XK_n,      spawn,          SHCMD ("code")},
+	{ MODKEY,                       XK_n,      spawn,          SHCMD ("vscodium")},
 	{ MODKEY,                       XK_s,      spawn,          SHCMD ("signal-desktop")},
 	{ MODKEY,                       XK_p,      spawn,          SHCMD ("tor-browser")},
 	{ MODKEY|ShiftMask,             XK_b,      spawn,          SHCMD ("blueman-manager")},
