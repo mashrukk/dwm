@@ -22,7 +22,7 @@ paru -S --noconfirm librewolf-bin
 clear
 paru -S --noconfirm qview-git
 clear
-paru -S --noconfirm visual-studio-code-bin
+paru -S --noconfirm vscodium-bin
 clear
 cd
 git clone https://github.com/mashrukk/dwm
