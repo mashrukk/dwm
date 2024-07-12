@@ -8,56 +8,34 @@ cd ..
 rm -rf paru-bin
 
 echo "Installing packages"
-paru -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot libxft noto-fonts noto-fonts-emoji alacritty mpv libxinerama picom lxappearance brightnessctl pavucontrol playerctl pamixer flameshot otf-font-awesome polkit-gnome feh xtrlock gnome-themes-extra papirus-icon-theme blueman
+paru -S hyprland waybar wofi swww noto-fonts noto-fonts-emoji alacritty mpv pavucontrol playerctl otf-font-awesome polkit-gnome gnome-themes-extra papirus-icon-theme blueman
 sudo systemctl enable bluetooth
 
 # Thunar
 ./thunar.sh
 clear
-cd 
 
 # Apps
-paru -S --noconfirm obsidian signal-desktop syncthing keepassxc vulkan-headers
+paru -S --noconfirm obsidian signal-desktop syncthing keepassxc
 paru -S --noconfirm brave-bin
 clear
 paru -S --noconfirm qview-git
 clear
 paru -S --noconfirm vscodium-bin
 clear
-cd
-git clone https://github.com/mashrukk/dwm
-mv dwm/ wm
+paru -S --noconfirm nwg-look-bin
 
-echo "Installing dwm, dmenu, and slstatus..."
-cd wm/dwm || exit
-sudo make clean install
-cd ../dmenu || exit
-sudo make clean install
-cd ../slstatus || exit
-sudo make clean install
+echo "Configuring Hyprland Desktop Environment..."
+mkdir -p ~/Pictures/wallpapers
+mkdir -p ~/Documents/Shared
+mkdir ~/Videos
+cd ..
+mv alacritty/ ~/.config/
+mv wofi/ ~/.config/
+mv wall.jpg ~/Pictures/wallpapers/
+mv hyprland.conf ~/.config/hypr/hyprland.conf
+rm scripts/install.sh
 cd
-mv wm/xinitrc ~/.xinitrc
-
-echo "Setting up picom"
-cd
-cd /etc/xdg/ || exit
-sudo rm picom.conf
-cd
-sudo mv wm/picom.conf /etc/xdg/
-cd
-mv wm/alacritty ~/.config/
-cd
-mkdir Pictures
-cd Pictures
-mkdir wallpapers
-cd
-mv wm/wall.jpg Pictures/wallpapers
-mkdir Videos
-mkdir Documents
-cd Documents
-mkdir Shared
-cd
-cd wm/scripts
-rm install.sh
-cd
-startx
+sudo rm /usr/share/hyprland/*
+clear
+Hyprland
