@@ -23,7 +23,7 @@ clear
 cd 
 
 # Apps
-paru -S --noconfirm obsidian signal-desktop syncthing keepassxc
+paru -S --noconfirm obsidian signal-desktop syncthing keepassxc vulkan-headers
 paru -S --noconfirm brave-bin
 clear
 paru -S --noconfirm vscodium-bin
