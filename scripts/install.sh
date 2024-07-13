@@ -28,6 +28,8 @@ paru -S --noconfirm brave-bin
 clear
 paru -S --noconfirm vscodium-bin
 clear
+paru -S --noconfirm qview-git
+clear
 cd
 git clone https://github.com/mashrukk/dwm
 mv dwm/ wm
