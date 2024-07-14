@@ -4,7 +4,7 @@ sudo sed -i "1s/.*/Acquire::http::Pipeline-Depth \"$PARALLEL_DOWNLOADS\";/" /etc
 sudo apt update
 
 # DWM packages
-sudo apt install --no-install-recommends xserver-xorg x11-xserver-utils xinit make libx11-dev libxft-dev libxinerama-dev build-essential fonts-noto-color-emoji libfribidi-dev
+sudo apt install --no-install-recommends xserver-xorg x11-xserver-utils xinit make libx11-dev libxft-dev libxinerama-dev build-essential libfribidi-dev
 
 sudo apt install --no-install-recommends lxappearance feh picom thunar alacritty fonts-noto fonts-noto-color-emoji
 
