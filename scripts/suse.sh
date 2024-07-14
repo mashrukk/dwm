@@ -22,9 +22,9 @@ sudo zypper install brave-browser
 #sudo zypper rm -u'
 
 # Apps
+sudo zypper in --no-recommends xorg-x11-server xinit xrandr xsetroot gcc picom libX11-devel libXft-devel libXinerama-devel fontawesome-fonts
 sudo zypper in --no-recommends opi
 opi codecs
-sudo zypper in --no-recommends xorg-x11-server xinit xrandr xsetroot gcc picom libX11-devel libXft-devel libXinerama-devel fontawesome-fonts
 
 # DWM
 git clone https://github.com/mashrukk/dwm
