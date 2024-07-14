@@ -4,7 +4,7 @@ sudo sed -i "1s/.*/Acquire::http::Pipeline-Depth \"$PARALLEL_DOWNLOADS\";/" /etc
 sudo apt update
 
 # DWM packages
-sudo apt install --no-install-recommends xserver-xorg x11-xserver-utils xinit make libx11-dev libxft-dev libxinerama-dev build-essential fonts-font-awesome fonts-noto-color-emoji libfribidi-dev 
+sudo apt install --no-install-recommends coreutils xserver-xorg x11-xserver-utils xinit make libx11-dev libxft-dev libxinerama-dev build-essential fonts-noto-color-emoji libfribidi-dev 
 
 sudo apt install --no-install-recommends lxappearance feh picom thunar alacritty flameshot
 
@@ -16,6 +16,15 @@ systemctl --user --now enable wireplumber.service
 cd
 git clone https://github.com/mashrukk/dwm
 mv dwm/ wm
+
+# Fonts
+mkdir ~/Downloads/fontawesome
+cd ~/Downloads/fontawesome
+wget https://use.fontawesome.com/releases/v5.15.4/fontawesome-free-5.15.4-web.zip
+unzip fontawesome-free-5.15.4-web.zip
+mkdir -p ~/.local/share/fonts/fontawesome
+cp ~/Downloads/fontawesome/fontawesome-free-5.15.4-web/webfonts/* ~/.local/share/fonts/fontawesome/
+
 
 echo "Installing dwm, dmenu, and slstatus..."
 cd wm/dwm || exit
