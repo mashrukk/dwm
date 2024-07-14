@@ -11,7 +11,7 @@ sudo apt install --no-install-recommends lxappearance feh picom thunar alacritty
 # Pipewire
 sudo apt install --no-install-recommends pamixer pipewire-pulse pipewire-alsa pipewire-jack pipewire-audio wireplumber pulseaudio-utils 
 
-systemctl --user --now enable wireplumber.service
+systemctl --user restart wireplumber pipewire pipewire-pulse
 
 cd
 git clone https://github.com/mashrukk/dwm
