@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j$nc\"/g" /etc/makepkg.conf
+sudo sed -i "s/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T $nc -z -)/g" /etc/makepkg.conf
+
 # Librewolf
 sudo rpm --import https://rpm.librewolf.net/pubkey.gpg
 
@@ -21,7 +24,7 @@ sudo zypper install brave-browser
 #sudo zypper in --no-recommends'
 #sudo zypper rm -u'
 # Apps
-sudo zypper in --no-recommends xorg-x11-server xorg-x11-xinit xrandr xsetroot libXft noto-fonts
+sudo zypper in --no-recommends xorg-x11-server xorg-x11-xinit xrandr xsetroot libXft libXinerama gcc picom noto-fonts
 
 # DWM
 git clone https://github.com/mashrukk/dwm
