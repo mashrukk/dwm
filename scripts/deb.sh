@@ -11,7 +11,7 @@ sudo apt install --no-install-recommends lxappearance feh picom thunar alacritty
 sudo apt install --no-install-recommends 
 
 # Pipewire
-sudo apt install --no-install-recommends pamixer pipewire-pulse pipewire-alsa pipewire-jack pipewire-audio wireplumber pulseaudio-utils 
+sudo apt install --no-install-recommends pamixer pipewire-pulse pipewire-jack pipewire-audio wireplumber pulseaudio-utils 
 
 systemctl --user restart wireplumber pipewire pipewire-pulse
 
