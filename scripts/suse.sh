@@ -24,7 +24,7 @@ sudo zypper install brave-browser
 # Apps
 sudo zypper in --no-recommends opi
 opi codecs
-sudo zypper in --no-recommends xorg-x11-server xorg-x11-xinit xrandr xsetroot libXft libXinerama gcc picom
+sudo zypper in --no-recommends xorg-x11-server xinit xrandr xsetroot gcc picom
 
 # DWM
 git clone https://github.com/mashrukk/dwm
