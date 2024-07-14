@@ -6,7 +6,9 @@ sudo apt update
 # DWM packages
 sudo apt install --no-install-recommends xserver-xorg x11-xserver-utils xinit make libx11-dev libxft-dev libxinerama-dev build-essential libfribidi-dev
 
-sudo apt install --no-install-recommends lxappearance feh picom thunar alacritty fonts-noto fonts-noto-color-emoji
+sudo apt install --no-install-recommends lxappearance feh picom thunar alacritty fonts-noto fonts-noto-color-emoji gnome-themes-extra
+
+sudo apt install --no-install-recommends 
 
 # Pipewire
 sudo apt install --no-install-recommends pamixer pipewire-pulse pipewire-alsa pipewire-jack pipewire-audio wireplumber pulseaudio-utils 
