@@ -17,15 +17,6 @@ cd
 git clone https://github.com/mashrukk/dwm
 mv dwm/ wm
 
-# Fonts
-mkdir ~/Downloads/fontawesome
-cd ~/Downloads/fontawesome
-wget https://use.fontawesome.com/releases/v5.15.4/fontawesome-free-5.15.4-web.zip
-unzip fontawesome-free-5.15.4-web.zip
-mkdir -p ~/.local/share/fonts/fontawesome
-cp ~/Downloads/fontawesome/fontawesome-free-5.15.4-web/webfonts/* ~/.local/share/fonts/fontawesome/
-
-
 echo "Installing dwm, dmenu, and slstatus..."
 cd wm/dwm || exit
 sudo make clean install
