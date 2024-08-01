@@ -14,7 +14,7 @@ cd ..
 rm -rf paru-bin
 
 echo "Installing packages"
-paru -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot libxft noto-fonts noto-fonts-emoji alacritty mpv libxinerama picom lxappearance brightnessctl pavucontrol playerctl pamixer flameshot otf-font-awesome polkit-gnome feh xtrlock gnome-themes-extra papirus-icon-theme blueman
+paru -S --noconfirm xorg-server xorg-xinit xorg-xrandr xorg-xsetroot libxft noto-fonts noto-fonts-emoji alacritty mpv libxinerama lxappearance brightnessctl pulsemixer playerctl pamixer flameshot fastfetch btop polkit-gnome feh xtrlock gnome-themes-extra papirus-icon-theme blueman
 sudo systemctl enable bluetooth
 
 # Thunar
@@ -24,11 +24,14 @@ cd
 
 # Apps
 paru -S --noconfirm obsidian signal-desktop syncthing keepassxc vulkan-headers
-paru -S --noconfirm librewolf-bin
+paru -S --noconfirm brave-bin
 clear
 paru -S --noconfirm vscodium-bin
 clear
 paru -S --noconfirm qview-git
+clear
+paru -S --noconfirm picom-ftlabs-git
+paru -c
 clear
 cd
 git clone https://github.com/mashrukk/dwm
@@ -44,26 +47,14 @@ sudo make clean install
 cd
 mv wm/xinitrc ~/.xinitrc
 
-echo "Setting up picom"
-cd
-cd /etc/xdg/ || exit
-sudo rm picom.conf
-cd
-sudo mv wm/picom.conf /etc/xdg/
-cd
-mv wm/alacritty ~/.config/
-cd
-mkdir Pictures
-cd Pictures
-mkdir wallpapers
-cd
-mv wm/wall.jpg Pictures/wallpapers
-mkdir Videos
-mkdir Documents
-cd Documents
-mkdir Shared
-cd
-cd wm/scripts
-rm install.sh
+mkdir -p ~/Pictures/Wallpapers/
+mkdir ~/Downloads
+mkdir ~/Videos
+mkdir -p ~/Documents/Shared/
+mkdir -p ~/.local/share/icons/
+mv ~/wm/cursor ~/.local/share/icons/
+mv ~/wm/alacritty ~/.config/
+mv wm/wall.jpg Pictures/Wallpapers
+rm ~/wm/scripts/install.sh
 cd
 startx
