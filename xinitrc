@@ -50,8 +50,8 @@ fi
 
 $HOME/wm/scripts/polkit.sh &
 xrandr --output "eDP-1" --mode 1920x1080 &
-feh --bg-scale --randomize $HOME/Pictures/wallpapers/* &
+feh --bg-scale --randomize $HOME/Pictures/Wallpapers/* &
 slstatus &
-picom &
+picom --animations -b &
 exec dwm
 
