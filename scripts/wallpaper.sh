@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory containing wallpapers
-wallpaper_dir="$HOME/Pictures/wallpapers"
+wallpaper_dir="$HOME/Pictures/Wallpapers"
 
 # Check if feh is installed
 if ! command -v feh &> /dev/null; then
