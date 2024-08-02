@@ -26,6 +26,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+        { "mpv",      NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
@@ -74,7 +75,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          SHCMD ("tor-browser")},
 	{ MODKEY|ShiftMask,             XK_b,      spawn,          SHCMD ("blueman-manager")},
 	{ MODKEY,                       XK_w,      spawn,          SHCMD ("exec $HOME/wm/scripts/wallpaper.sh")},
-	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD ("feh --bg-scale --randomize $HOME/Pictures/wallpapers/*") },
+	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD ("feh --bg-scale --randomize $HOME/Pictures/Wallpapers/*") },
         { MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD ("GTK_THEME=Adwaita:dark pavucontrol")},
 	{ 0,			        XK_Print,  spawn,	   {.v = prtscrcmd } },
         { MODKEY,                       XK_l,      spawn,          SHCMD ("xtrlock")},
