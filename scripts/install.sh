@@ -24,14 +24,14 @@ cd
 
 # Apps
 paru -S --noconfirm obsidian signal-desktop syncthing keepassxc vulkan-headers
-paru -S --noconfirm brave-bin
+paru -S --noconfirm librewolf-bin
 clear
 paru -S --noconfirm vscodium-bin
 clear
 paru -S --noconfirm qview-git
 clear
 paru -S --noconfirm picom-ftlabs-git
-paru -c
+paru -c --noconfirm
 clear
 cd
 git clone https://github.com/mashrukk/dwm
