@@ -8,7 +8,7 @@ window:
 # | Beam
 # style: Beam
 font:
-  size: 11.5
+  size: 11
   normal:
     family: "Noto Sans Mono"
     style: Regular
